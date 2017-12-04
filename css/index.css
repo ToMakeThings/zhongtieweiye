@@ -1,0 +1,391 @@
+@import url(public/reset.css);
+html{
+	font-size: 62.5%;
+}
+header{
+	width:100%;
+	height:16rem;
+	position: relative;
+}
+header .headerImg{
+	width: 100%;
+	height: 16rem;
+}
+header .headerImg img{
+	width: 100%;
+	height: 100%;
+}
+header p{
+	font-weight: 600;
+}
+header .lm-one{
+	font-size: 1.5rem;
+	color: #f7f7f7;
+	z-index: 100;
+	position: absolute;
+	left: 4rem;
+	top: 4.4rem;
+}
+header p span{
+	font-size: 1.9rem;
+	color: #1f5685;
+	z-index: 100;
+}
+header  .lm-two{
+	font-size: 1.5rem;
+	color: #f7f7f7;
+	z-index: 100;
+	position: absolute;
+	left: 12.3rem;
+	top: 7.8rem;
+}
+section{
+	background: #f7f7f7;
+}
+section .about-as{
+	height:4.4rem;
+	line-height: 4.4rem;
+	font-size: 1.5rem;
+	color: #333333;
+	padding-left: 1rem;
+	background:#fff;
+	border-bottom: 1px solid #f7f7f7;
+	}
+section .landmark{
+	width: 100%;
+	height: 8rem;
+	background: #fff;
+	padding-top: 1rem;
+}
+section .landmark img{
+	width: 100%;
+	height: 100%;
+}
+section .CompanyIntroduction{
+	
+	height: auto;
+	width: 100%;
+	padding-left: 1rem;
+	padding-right:1rem;
+	background: #fff;	
+}
+section .CompanyIntroduction .ci-title{
+	margin-top:0.7rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	font-size: 1.4rem;
+}
+section .CompanyIntroduction .ci-title span{
+	color: rgb(50,50,50);
+	font-size: 1.4rem;
+	border-bottom: 1px solid #027dcc;
+	padding-bottom: 0.5rem;
+}
+section .CompanyIntroduction .ci-content{
+	margin-top: 8px;
+	height: 16rem;
+	overflow: hidden;
+}
+section .CompanyIntroduction .ci-content span{
+	font-size: 1.3rem;
+	line-height: 1.2rem;
+	color:rgb(102,102,102)
+}
+section .CompanyIntroduction .ci-btn{
+	color: #95bede;
+	height: 28px;
+	line-height: 28px;
+	margin-top: 2.5rem;
+	font-size: 1.2rem;
+	position: relative;
+}
+section .CompanyIntroduction .ci-btn span{
+	position: absolute;
+	right:8px ;
+	color: rgb(2,125,204);
+	padding-right: 0.4rem;
+}
+/*产品介绍*/
+section .productsIntroduction{
+	background: #fff;
+	margin-top: 1rem;
+	padding: 0 8px 10px 8px;
+}
+section .productsIntroduction .pi-title{
+	height: 4.4rem;
+	line-height: 4.4rem;
+	font-size: 1.5rem;
+	color: #333333;
+	border-bottom: 1px solid rgb(247,247,247);
+}
+section .productsIntroduction .pi-content{
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+}
+section .productsIntroduction .pi-content .pi-c-one,section .productsIntroduction .pi-content .pi-c-two{
+	display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+	margin-top: 1rem;
+}
+section .productsIntroduction .pi-content dl{
+ flex: 1;
+ height: 6.2rem;
+ display: flex;
+ flex-direction: column;
+ justify-content:center;
+ align-items: center;
+}
+section .productsIntroduction .pi-content dl dt{
+	width: 4.4rem;
+	height: 4.4rem;
+}
+section .productsIntroduction .pi-content dl dt img{
+	width: 100%;
+	height: auto;
+}
+section .productsIntroduction .pi-content dl  dd{
+	text-align: center;
+	font-size: 1.1rem;
+	height: 2.4rem;
+	line-height:1.7rem ;
+}
+/*新闻中心*/
+section .newsCenter{
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 0 1rem 1.5rem 1rem;
+    margin-top: 1rem;
+}
+section .newsCenter .nc-title{
+	color:#000;
+	font-size: 1.6rem;
+	height: 4.4rem;
+	line-height: 4.4rem;
+	border-bottom: 1px solid rgb(247,247,247) ;
+}
+section .newsCenter .blockGroup{
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+section .newsCenter .blockGroup .block{
+	width: 48%;
+	height: auto;
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e5e6e8;
+	
+}
+section .newsCenter .blockGroup .block{
+	margin-right: 10px;
+}
+section .newsCenter .blockGroup .bkImg{
+	width: 100%;
+	height: 10rem;
+	position: relative;
+}
+section .newsCenter .blockGroup .bkImg div{
+	height: 4.5rem;
+	padding: 1rem;
+	width: 100%;
+	background: #277cb4;
+	opacity: 0.8;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    
+}
+section .newsCenter .blockGroup .bkImg div p{
+	line-height: 1.5rem;
+	text-overflow: -o-ellipsis-lastline;   
+	overflow: hidden;   
+	text-overflow: ellipsis;   
+	display: -webkit-box;   
+	-webkit-line-clamp: 2;  
+	-webkit-box-orient: vertical; 
+}
+section .newsCenter .blockGroup .bkImg p span{
+	color: #fff;
+	font-size: 1.1rem;
+}
+section .newsCenter .blockGroup .bkImg img{
+	width:100%;
+	height:100%;
+}
+section .newsCenter .blockGroup .block:nth-child(1){
+	margin-right: 1rem;
+}
+section .newsCenter .blockGroup .block h4{
+	margin-top: 0.6rem;
+	height: 3rem;
+	line-height:3rem ;
+	color: #027dcc;
+	font-size: 1.4rem;
+	padding-left: 0.5rem;
+	border-bottom: 1px dashed rgb(247,247,247);
+}
+section .newsCenter .blockGroup .block .bkContent{
+	padding-left: 1rem;
+	font-size: 1.3rem;
+	color: rgb(77,77,77);
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+section .newsCenter .blockGroup .block p s{
+	width: 100%;
+	height: 100%;
+}
+section .newsCenter .blockGroup .block p .date{
+	font-size: 0.8rem;
+	color: rgb(128,128,128);
+	padding: 0 0.8rem;
+}
+section .newsCenter .blockGroup .block p .content{
+	font-size: 1.3rem;
+}
+
+section .newsCenter .blockGroup .block  .moreBox{
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content:flex-end; 
+    margin-right: 1.4rem;
+}
+section .newsCenter .blockGroup .block a{
+	text-align: center;
+	display: block;
+	width: 6.8rem;
+	height: 2.4rem;
+	line-height:2.4rem;
+	border: 1px solid rgb(230,230,230);
+	margin: 1.5rem 0;
+	color: rgb(2,133,184);
+	font-size: 1.2rem;
+
+}
+/*联系我们*/
+section .contactUs{
+	background: #fff;
+	padding: 0 8px;
+	margin-top: 1rem;
+	padding-bottom: 1rem;
+}
+section .contactUs .cu-title{
+	height: 4.8rem;
+	line-height: 4.8rem;
+	color: rgb(51,51,51);
+	font-size: 1.6rem;
+	border-bottom: 1px solid rgb(247,247,247);
+}
+section .contactUs .showMessage{
+	padding-left: 1.7rem;
+	font-size: 1.4rem;
+	color: rgb(102,102,102);
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+}
+section .contactUs .showMessage .imgBox{
+	width:2.2rem;
+	height:2.2rem;
+	 display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+     align-items: center;
+}
+section .contactUs .showMessage .content{
+	padding-left: 1rem;
+}
+
+section .contactUs .showMessage .imgBox img{
+	width: 100%;
+	height: 100%;
+}
+section .contactUs .showMessage div{
+	 height: 4.4rem;
+	 line-height:4.4rem;
+	 border-bottom: 1px solid rgb(247,247,247);
+	 display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*个人信息*/
+section .selfMessage{
+	background: #fff;
+	margin-top: 1rem;
+	padding: 0 1rem;
+	height: auto;
+}
+section .selfMessage div{
+	 height: 4.4rem;
+	 line-height: 4.4rem;
+	 font-size: 1.5rem;
+	 color: #666666;
+	 display: -webkit-flex; /* Safari */
+     display: flex;
+     flex-direction: row;
+     padding-left: 1rem;
+}
+section .selfMessage div input{
+	border: none;
+	border-bottom: 1px solid #f7f7f7;
+	flex: 1;
+	margin-left: 1.7rem;
+	font-size: 1.2rem;
+	outline: none;
+}
+section .selfMessage div input ::-webkit-input-placeholder {  
+　　color:#d9d9d9;
+　　}
+section .selfMessage .sm-textarea{
+	margin: 1rem;
+	padding:1rem;
+	height: auto;
+	border: 1px solid #f7f7f7;
+	margin-top: 1rem;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	height: 12.3rem;
+}
+section .selfMessage .sm-textarea p{
+	text-align: right;
+	height: 2rem;
+	line-height: 2rem;
+}
+section .selfMessage textarea{
+	flex: 1;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	resize: none;
+	outline: none;
+	border: none;
+}
+section .selfMessage button{
+	display: block;
+	width: 90%;
+	height: 3.6rem;
+	background: #007ecf;
+	text-align: center;
+	line-height: 3rem;
+	color: #fff;
+	font-size:1.5rem;
+	margin: 3rem auto;
+	outline: none;
+	border: none;
+}
+footer{
+	height: 16.5rem;
+}
+footer object{
+	height: 100%;
+}

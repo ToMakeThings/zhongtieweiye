@@ -1,0 +1,90 @@
+@import url(public/reset.css);
+html{
+	font-size: 62.5%;
+}
+html,body,#wrap{
+	width: 100%;
+	height: 100%;
+}
+header{
+	width:100%;
+	height:4.4rem;
+	line-height: 4.4rem;
+	background: #037ccb;
+	text-align: center;
+	color:#fff;
+	font-size:1.5rem;
+	position: relative;
+}
+section{
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+   
+}
+section nav{
+	height: 4.4rem;
+	line-height: 4.4rem;
+	font-size: 1.3rem;
+	overflow: hidden;
+	padding: 0 1rem;
+}
+section nav .index{
+	color: #027AD1;
+	border-bottom:3px solid #027ad1;
+}
+section nav .swiper-slide{
+text-align: center;	
+}
+section .swperContent{
+	flex: 1;
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.2rem;
+}
+section .swperContent .scContent{
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+section .swperContent .scContent .sccContent{
+   position: relative;
+   width: 48%;
+   height: 20rem;
+   margin-bottom: 1.5rem;
+   
+}
+section .swperContent .scContent .sccContent:nth-of-type(odd){
+	 margin-right: 1rem;
+}
+section .swperContent .scContent .sccContent img{
+   width: 100%;
+   height: 100%;	
+}
+section .swperContent .scContent .sccContent .jsContent{
+	width: 100%;
+	height: 6rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #0573ae; 
+	opacity: 0.8;
+	text-align: center;
+	font-size: 1.2rem;
+	color: #fff;
+	padding: 1.3rem 0;
+}
+section .swperContent .scContent .sccContent .jsContent p:nth-child(1){
+	font-size: 1.5rem;
+	margin-bottom: 0.8rem;
+	font-weight: 500;
+}
+footer{
+	height: 16.5rem;
+}
+footer object{
+	height: 100%;
+}

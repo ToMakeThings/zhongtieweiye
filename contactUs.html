@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="UTF-8" />
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>联系我们</title>
+		<link rel="stylesheet" href="css/contactUs.css" />
+		<link rel="stylesheet" href="css/showNav.css" />
+	</head>
+	<body>
+		
+	 <!--导航栏-->
+	 <div class="layer"></div> 
+	 <div class="showNav">
+		<ul>
+			<li class="index"><a href="index.html">首页</a></li>
+			<li><a href="ProductDisplay.html">产品展示</a></li>
+			<li><a href="new.html">新闻资讯</a></li>
+			<li><a href="means.html">资料下载</a></li>
+			<li><a href="jobs.html">人才招聘</a></li>
+			<li><a href="steppingInto.html">走进中铁</a></li>
+			<li><a href="contactUs.html">联系我们</a></li>
+		</ul>
+		<div class="content">
+			<p>010-63331717</p>
+			<p>我们聆听您的需求全国免费服务热线</p>
+		</div>
+	</div> 
+		<div id="wrap">
+			<header>
+         		<img src="img/363277.jpg" alt="" />
+         		   <p><span>联系我们</span><span>contact us</span></p>
+         		   <span class="showListBox"><img src="img/find@3x.png" alt="" /></span>
+             	</header>
+			<section>
+				<div class="list">
+				   <h3><span><img src="img/矩形-381.jpg" alt="" /></span>联系我们<p></p></h3>
+                   <ul>
+	                   	<li><span class="imgBox"><img src="img/index/地址@2x.png" alt="" /></span><div><span>地址：</span><span>北京市西二环路菜户营东街甲88号</span></div></li>
+	                   	<li><span class="imgBox"><img src="img/index/电话@2x.png" alt="" /></span><div><span>电话：</span><span>010-63331717</span></div></li>
+	                   	<li><span class="imgBox"><img src="img/index/传真@2x.png" alt="" /></span><div><span>传真：</span><span>010-63331113-808</span></div></li>
+	                   	<li><span class="imgBox"><img src="img/index/邮编@2x.png" alt="" /></span><div><p><span>邮编：</span><span>100054</span></p><p><span>E-mail：</span><span>zhtwy@126.com</span></p></div></li>
+                   </ul>
+				</div>
+				<div class="list-input">
+				   <h3><span><img src="img/矩形-381.jpg" alt="" /></span>联系我们<p></p></h3>
+                   <ul>
+	                   	 <li class="ly-name">
+	                   	 	<span>姓名：</span>
+	                   	 	<input type="text" />
+	                   	 </li>
+	                   	 <li class="ly-phone">
+	                   	 	<span>手机号：</span>
+	                   	 	<input type="text" />
+	                   	 </li>
+	                   	 <li class="ly-email">
+	                   	 	<span>邮箱：</span>
+	                   	 	<input type="email" />
+	                   	 </li>
+	                   	 <li class="ly-address">
+	                   	 	<span>地址：</span>
+	                   	 	<input type="text" />
+	                   	 </li>
+	                   	  <div class="area-input"><textarea name="" placeholder="请留下您宝贵的建议" id="textArea"></textarea><p><span id="textNum"></span>/200</p></div>
+                   <button id="tjBtn">提交</button>
+                   </ul>
+                  
+				</div>
+			</section>
+			<!--底部-->
+	 	<footer><object style="border:1px" type="text/x-scriptlet" data="1.shtml" width=100% heigth:100%></object></footer>
+		</div>
+	</body>
+		<script src="js/jquery.js" charset="utf-8"></script>
+		<script src="js/contactUs.js"></script>
+<script type="text/javascript">
+	$('.showListBox').click(function() {
+		$('body').toggleClass('open');
+	});
+	$('.layer').click(function() {
+		$('body').toggleClass('open');
+	});
+	//	显示剩余字数
+$('#textArea').on("keyup",function(){
+$('#textNum').text($('#textArea').val().length);//这句是在键盘按下时，实时的显示字数
+if($('#textArea').val().length > 200){
+$('#textNum').text(200);//长度大于100时0处显示的也只是100
+$('#textArea').val($('#textArea').val().substring(0,200));//长度大于100时截取钱100个字符
+}
+})
+$('#textNum').text($('#textArea').val().length);//这句是在刷新的时候仍然显示字数
+</script>
+</html>

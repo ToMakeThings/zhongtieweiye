@@ -1,0 +1,82 @@
+<style>
+html{
+	font-size: 62.5%;
+}
+ body{
+ 	overflow: hidden;
+ 	background: #0271b8;
+ 	height:18rem;
+ 	margin: 0;
+ 	padding: 0;
+ }
+.footerBox{
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    height: auto;
+    padding: 1.1rem 0 0 0;
+    
+}
+.footerBox .groupBox{
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around; 
+}
+.footerBox .group{
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+}
+.footerBox .group a:nth-child(1){
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+.footerBox a{
+	color: fff;
+	text-decoration:none;
+	font-size: 1.2rem;
+	margin-top: 0.7rem;
+}
+.bq-footer{
+	color: #fff;
+	text-align: center;
+	font-size: 1.4rem;
+	height: 4.4rem;
+	line-height: 4.4rem;
+	font-weight: 400;
+	background: #026cad;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+</style>
+<div class="footerBox">
+	<div class="groupBox">
+	<div class="group group1">
+		<a href="#">关于中铁伟业</a>
+		<a href="#">中铁介绍</a>
+		<a href="#">发展历程</a>
+		<a href="#">合作伙伴</a>
+		<a href="#">荣誉资质</a>
+	</div>
+	<div class="group group2">
+		<a href="#">所有产品系列</a>
+		<a href="#">工业系列</a>
+		<a href="#">水处理清洗剂系列</a>
+		<a href="#">螺纹锁固密封剂</a>
+		<a href="#">压氧型管螺纹密封系列</a>
+	</div>
+	<div class="group group3">
+		<a href="#">所有产品系列</a>
+		<a href="#">印刷系列</a>
+		<a href="#">车辆养护系列</a>
+		<a href="#">船舶系列</a>
+		<a href="#">客房系列</a>
+	</div>
+	</div>
+</div>
+<p class="bq-footer">版权所有 &copy;中铁伟业  (北京) 新技术有限公司</p>
